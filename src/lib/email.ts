@@ -13,7 +13,7 @@ export const send = async (emailFormData: z.infer<typeof formSchema>) => {
         from: `Resend <${process.env.RESEND_FROM_EMAIL}>`,
         to: [emailFormData.email],
         subject: 'NEW Contact Form Submission',
-        react: EmailTemplate({ firstName: emailFormData.firstName, lastName: emailFormData.lastName, email: emailFormData.email, message: emailFormData.message}),
+        react: await EmailTemplate({ firstName: emailFormData.firstName, lastName: emailFormData.lastName, email: emailFormData.email, message: emailFormData.message}),
       });
 
     if (error) {

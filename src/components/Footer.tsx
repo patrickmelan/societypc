@@ -1,7 +1,4 @@
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react'
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
 
 export default function Footer() {
   return (

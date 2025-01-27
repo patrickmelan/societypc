@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { Button } from "@/components/ui/button"
@@ -12,7 +11,6 @@ import * as z from "zod"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -50,7 +48,7 @@ export default function ContactPage() {
                 <CardHeader>
                     <CardTitle>Contact Us</CardTitle>
                     <CardDescription>
-                    Fill out the form below and we'll get back to you as soon as possible.
+                    Fill out the form below and we&apos;ll get back to you as soon as possible.
                     </CardDescription>
                 </CardHeader>
                 <CardContent>
