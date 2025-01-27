@@ -2,7 +2,6 @@
 
 import { z } from "zod";
 import { formSchema } from "./schemas";
-import type { NextApiRequest, NextApiResponse } from 'next';
 import { EmailTemplate } from '../components/ui/email-template';
 import { Resend } from 'resend';
 

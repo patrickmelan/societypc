@@ -12,7 +12,7 @@ export default function Hero() {
               Expert Computer Repair at Your Service
             </h1>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Fast, reliable, and professional tech solutions for all your needs. We're here to keep your digital world
+              Fast, reliable, and professional tech solutions for all your needs. We&apos;re here to keep your digital world
               running smoothly.
             </p>
             <Button

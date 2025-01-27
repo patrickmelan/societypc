@@ -3,13 +3,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import Link from 'next/link'
 import { Button } from './ui/button'
 
-const services = [
-  { icon: Cpu, title: 'Hardware Repair', description: 'Fix and upgrade computer components' },
-  { icon: HardDrive, title: 'Data Recovery', description: 'Retrieve lost or corrupted data' },
-  { icon: Wifi, title: 'Network Setup', description: 'Configure and optimize your network' },
-  { icon: Shield, title: 'Virus Removal', description: 'Protect your system from malware' },
-]
-
 export default function Services() {
   return (
     <section id="services" className="py-16 bg-blue-500">

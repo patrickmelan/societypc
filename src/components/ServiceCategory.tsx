@@ -2,7 +2,6 @@ import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/componen
 import { CheckCircle, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
 
 interface ServiceCategoryProps {
   title: string
