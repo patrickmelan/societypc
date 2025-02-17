@@ -2,6 +2,12 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { PenToolIcon as Tool, Terminal, Search, Shield } from 'lucide-react'
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Computer Repairs',
+  description: 'Fast and reliable computer repairs. Virus removal, hardware replacements, system optimization, and troubleshooting for desktops and laptops.',
+}
 
 const repairServices = [
   { icon: Tool, title: "Hardware Repairs and Component Replacement", description: "Restores functionality by addressing physical damage or worn-out components, extending the life of your device." },

@@ -2,6 +2,12 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { HardDrive, ArrowUpCircle, ArrowLeftRight, Cloud, Lock } from 'lucide-react'
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Data Services',
+  description: 'Professional data recovery, secure cloud backup, hard drive restoration, and file transfer services. Protect and restore your important data with Society PC.',
+}
 
 const dataServices = [
   { icon: HardDrive, title: "Data Recovery from Damaged Drives", description: "Restores critical files and documents lost due to hardware failure, ensuring minimal disruption." },

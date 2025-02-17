@@ -1,12 +1,21 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Globe, Users } from 'lucide-react'
+import { Globe, Users, Search } from 'lucide-react'
+import type { Metadata } from 'next'
+import { title } from 'process'
+ 
+export const metadata: Metadata = {
+  title: 'Web Development',
+  description: 'Professional website design, development and SEO services. Build your online presence with custom, responsive websites from Society PC.',
+}
 
 const webDevServices = [
   { icon: Globe, title: "Custom Website Design and Development", description: "Creates unique, user-friendly websites that reflect your brand and engage your target audience effectively." },
-  { icon: Users, title: "Tailored Solutions for Small Businesses and Individuals", description: "Delivers personalized functionality and scalability to meet specific needs and goals for you, or your business." },
+  { icon: Search, title: "SEO Solutions", description: "Allow your website to flourish on Google through a variety of SEO enhancements that happen right inside of your website." }
 ]
+
+//{ icon: Users, title: "Tailored Solutions for Small Businesses and Individuals", description: "Delivers personalized functionality and scalability to meet specific needs and goals for you, or your business." },
 
 export default function WebDevelopmentPage() {
   return (

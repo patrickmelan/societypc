@@ -2,7 +2,12 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Cpu, Gamepad, Briefcase, List, Wrench } from 'lucide-react'
-
+import type { Metadata } from 'next'
+ 
+export const metadata: Metadata = {
+  title: 'Custom PC Builds',
+  description: 'Custom-built gaming PCs, workstation computers, and performance desktops. High-end components, expert assembly, and tailored builds for gaming, editing, and business.',
+}
 const customBuildServices = [
   { icon: Cpu, title: "Custom PC Builds", description: "Tailored to meet specific needs, our custom PC builds provide the perfect balance of performance, efficiency, and budget." },
   { icon: Gamepad, title: "Gaming PCs", description: "Designed for maximum power and performance, gaming PCs deliver an immersive experience with high frame rates and cutting-edge graphics." },

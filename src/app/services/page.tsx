@@ -5,7 +5,7 @@ import ServiceCategory from '@/components/ServiceCategory'
 import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
-  title: 'Society PC - Services',
+  title: 'Society PC | Services',
   description: '...',
 }
 

@@ -23,8 +23,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-center"><Phone className="h-5 w-5 mr-2" /> (610) - 349 - 4041</li>
-              <li className="flex items-center"><Mail className="h-5 w-5 mr-2" /> info@societypc.com</li>
+              <li className="flex items-center"><Phone className="h-5 w-5 mr-2" /> (610) - 947 - 0943</li>
+              <li className="flex items-center"><Mail className="h-5 w-5 mr-2" /> contact@societypc.com</li>
               <li className="flex items-center"><MapPin className="h-5 w-5 mr-2" /> 417 Cattell Street, Suite 1<br />Easton, PA 18042</li>
             </ul>
           </div>
