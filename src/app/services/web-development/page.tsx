@@ -1,9 +1,8 @@
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Globe, Users, Search } from 'lucide-react'
+import { Globe, Search } from 'lucide-react'
 import type { Metadata } from 'next'
-import { title } from 'process'
  
 export const metadata: Metadata = {
   title: 'Web Development',
