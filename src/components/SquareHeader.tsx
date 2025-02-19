@@ -2,25 +2,24 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { ChevronDown } from "lucide-react"
-import { Button } from './ui/button'
 
 
-export default function Header() {
+export default function SquareHeader() {
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/SocietyPC_Logo_Jan2025.jpg"
-            width={120}
-            height={35}
-            alt="Society PC Logo"
+            src="/SocietyPC_Icon_Jan2025.png"
+            width={65}
+            height={65}
+            alt=""
             className="h-auto hover:opacity-90 transition-opacity"
           />
         </Link>
         <nav>
           <ul className="flex space-x-6">
-            <li className='mt-1.5'><DropdownMenu>
+            <li><DropdownMenu>
                 <DropdownMenuTrigger className="text-gray-600 hover:text-blue-500 flex items-center">
                   Services <ChevronDown className="ml-1 h-4 w-4" />
                 </DropdownMenuTrigger>
@@ -54,8 +53,7 @@ export default function Header() {
                 </DropdownMenuContent>
               </DropdownMenu></li>
             {/*<li><Link href="/#why-choose-us" className="text-gray-600 hover:text-blue-500 transition-colors duration-200 font-medium">Why Choose Us</Link></li>*/}
-            <li className='mt-1.5'><Link href="/contact" className="text-gray-600 hover:text-blue-500 transition-colors duration-200 font-medium">Contact</Link></li>
-            <li><Button className='bg-blue-600 hover:bg-blue-700 text-white transition duration-300'><Link href="/book" className="">Book Now</Link></Button></li>
+            <li><Link href="/contact" className="text-gray-600 hover:text-blue-500 transition-colors duration-200 font-medium">Contact</Link></li>
           </ul>
         </nav>
       </div>

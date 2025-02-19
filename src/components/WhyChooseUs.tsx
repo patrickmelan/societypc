@@ -1,10 +1,10 @@
-import { Clock, ThumbsUp, DollarSign } from 'lucide-react'
+import { DollarSign, PersonStanding, Wrench } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 const reasons = [
-  { Icon: Clock, title: 'Fast Turnaround', description: 'We complete most repairs within 24-48 hours' },
-  { Icon: ThumbsUp, title: 'Expert Technicians', description: 'Our team is certified and highly skilled' },
-  { Icon: DollarSign, title: 'Competitive Pricing', description: 'Quality service at affordable rates' },
+  { Icon: DollarSign, title: 'Competitive Pricing', description: 'Competitive & reasonable pricing for all of your tech needs!' },
+  { Icon: PersonStanding, title: 'Family Owned', description: 'When you come to the shop, you will be treated like family!' },
+  { Icon: Wrench, title: 'Quality Parts', description: 'We use only genuine, high-quality replacement parts for all repairs!' },
 ]
 
 export default function WhyChooseUs() {

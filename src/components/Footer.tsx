@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react'
+import { Facebook, Instagram, Mail, Phone, MapPin } from 'lucide-react'
 
 export default function Footer() {
   return (
@@ -6,16 +6,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Society PC Repair</h3>
+            <h3 className="text-2xl font-semibold mb-6">Society PC</h3>
             <p className="mb-6 text-gray-300 leading-relaxed">Expert computer repair services for all your tech needs</p>
             <div className="flex space-x-6">
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">
+              <a href="https://www.facebook.com/people/Society-PC/61573126776051/#" className="hover:text-blue-400 transition-colors duration-200">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="hover:text-blue-400 transition-colors duration-200">
+              <a href="https://www.instagram.com/society_pc" className="hover:text-pink-400 transition-colors duration-200">
                 <Instagram className="h-6 w-6" />
               </a>
             </div>
@@ -23,8 +20,8 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
             <ul className="space-y-2">
-              <li className="flex items-center"><Phone className="h-5 w-5 mr-2" /> (610) - 947 - 0943</li>
-              <li className="flex items-center"><Mail className="h-5 w-5 mr-2" /> contact@societypc.com</li>
+              <li className="flex items-center hover:text-blue-500 transition-colors duration-200"><Phone className="h-5 w-5 mr-2" /><a href="tel:+16109470943">(610) - 947 - 0943</a></li>
+              <li className="flex items-center hover:text-blue-500 transition-colors duration-200"><Mail className="h-5 w-5 mr-2" /><a href="mailto:contact@societypc.com">contact@societypc.com</a></li>
               <li className="flex items-center"><MapPin className="h-5 w-5 mr-2" /> 417 Cattell Street, Suite 1<br />Easton, PA 18042</li>
             </ul>
           </div>
@@ -32,6 +29,7 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="/services" className="hover:text-blue-500 transition-colors duration-200">Services</a></li>
+              <li><a href="/book" className="hover:text-blue-500 transition-colors duration-200">Book an Appointment</a></li>
               {/**<li><a href="#why-choose-us" className="hover:text-blue-500 transition-colors duration-200">Why Choose Us</a></li>**/}
             </ul>
           </div>

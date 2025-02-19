@@ -1,7 +1,9 @@
 import Image from "next/image"
-import { Mail, WrenchIcon } from "lucide-react"
+import { Mail, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+
+const bookingLink = "https://app.squareup.com/appointments/book/moy26y6z0r5ivq/L2CY36EZBEZ5Y/start"
 
 export default function Hero() {
   return (
@@ -18,16 +20,16 @@ export default function Hero() {
             </p>
             <Button
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-blue-600 hover:bg-blue-700 text-white transition duration-300"
             >
-              <Link href="/services">View Services</Link>
-              <WrenchIcon className="ml-2 h-5 w-5" />
+              <Link href="/book" className="text-lg">Book an Appointment</Link>
+              <Calendar className="ml-2 h-5 w-5" />
             </Button>
             <Button
               size="lg"
-              className="bg-blue-600 mx-2 hover:bg-blue-700 text-white transition duration-300 ease-in-out transform hover:scale-105"
+              className="bg-blue-600 mx-2 hover:bg-blue-700 text-white transition duration-300"
             >
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contact" className="text-lg">Contact Us</Link>
               <Mail className="ml-2 h-5 w-5" />
             </Button>
           </div>
