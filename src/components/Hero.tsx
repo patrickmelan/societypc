@@ -3,8 +3,6 @@ import { Mail, Calendar } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 
-const bookingLink = "https://app.squareup.com/appointments/book/moy26y6z0r5ivq/L2CY36EZBEZ5Y/start"
-
 export default function Hero() {
   return (
     <section className="bg-gray-200 py-16 md:py-24">
