@@ -16,20 +16,22 @@ export default function Hero() {
               Fast, reliable, and professional tech solutions for all your needs. We&apos;re here to keep your digital world
               running smoothly.
             </p>
-            <Button
-              size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white transition duration-300"
-            >
-              <Link href="/book" className="text-lg">Book an Appointment</Link>
-              <Calendar className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              size="lg"
-              className="bg-blue-600 mx-2 hover:bg-blue-700 text-white transition duration-300"
-            >
+            <div className="md:space-x-2 space-y-2">
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white transition duration-300"
+              >
+                <Link href="/book" className="text-lg">Book an Appointment</Link>
+                <Calendar className="ml-2 h-5 w-5" />
+              </Button>
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700 text-white transition duration-300"
+              >
               <Link href="/contact" className="text-lg">Contact Us</Link>
               <Mail className="ml-2 h-5 w-5" />
             </Button>
+            </div>
           </div>
           <div className="md:w-1/2 flex justify-center items-center">
             <div className="relative w-full max-w-md aspect-square">
