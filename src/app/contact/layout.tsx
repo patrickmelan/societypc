@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "Society PC | Contact",
@@ -18,6 +19,7 @@ export default function RootLayout({
         <SpeedInsights/>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-7MM1MN02JX" />
     </html>
   );
 }
