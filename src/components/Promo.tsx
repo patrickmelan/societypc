@@ -17,12 +17,43 @@ export default function HomePage() {
 
     // Show the dialog when the component mounts (page loads)
     useEffect(() => {
-        // Small delay to ensure the dialog appears after page load
-        const timer = setTimeout(() => {
-        setShowSpecialOffer(true)
-        }, 500)
+        const shouldShowPromo = () => {
+            try {
+                // Get the last time promo was shown
+                const lastShown = localStorage.getItem('promoLastShown')
+                const lastShownDate = lastShown ? new Date(lastShown) : null
+                const now = new Date()
+                
+                // Don't show if it was shown in the last 24 hours
+                if (lastShownDate && (now.getTime() - lastShownDate.getTime()) < 24 * 60 * 60 * 1000) {
+                    return false
+                }
+                
+                // Show with 30% probability (adjust this percentage as needed)
+                const randomChance = Math.random()
+                const showProbability = 0.3 // 30% chance
+                
+                return randomChance < showProbability
+            } catch (error) {
+                // If localStorage is not available, show with reduced probability
+                return Math.random() < 0.2 // 20% chance as fallback
+            }
+        }
 
-        return () => clearTimeout(timer)
+        if (shouldShowPromo()) {
+            // Small delay to ensure the dialog appears after page load
+            const timer = setTimeout(() => {
+                setShowSpecialOffer(true)
+                // Record that we showed the promo
+                try {
+                    localStorage.setItem('promoLastShown', new Date().toISOString())
+                } catch (error) {
+                    // Ignore localStorage errors
+                }
+            }, 500)
+
+            return () => clearTimeout(timer)
+        }
     }, [])
 
     return (
