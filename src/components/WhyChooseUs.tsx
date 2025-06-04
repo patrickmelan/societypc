@@ -9,18 +9,20 @@ const reasons = [
 
 export default function WhyChooseUs() {
   return (
-    <section id="why-choose-us" className="py-16 bg-white">
+    <section id="why-choose-us" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Why Choose Us</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <h2 className="text-4xl font-bold text-center mb-16 text-gray-800">
+          Why Choose Us
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {reasons.map((reason, index) => (
-            <Card key={index}>
+            <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader>
-                <reason.Icon className="h-16 w-16 text-blue-500 mb-4 mx-auto" />
-                <CardTitle className="text-center">{reason.title}</CardTitle>
+                <reason.Icon className="h-16 w-16 text-blue-500 mb-6 mx-auto transform transition-transform hover:scale-110 duration-300" />
+                <CardTitle className="text-center text-xl font-bold">{reason.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-center text-gray-600">{reason.description}</p>
+                <p className="text-center text-gray-600 leading-relaxed">{reason.description}</p>
               </CardContent>
             </Card>
           ))}

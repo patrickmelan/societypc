@@ -1,25 +1,14 @@
 import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
-  title: "Society PC | Contact",
-  description: "Local computer repair in Easton, Pennsylvania. "
+  title: "Contact Us | Society PC",
+  description: "Get in touch with Society PC for all your computer repair and tech service needs in Easton, PA.",
 };
 
-export default function RootLayout({
+export default function ContactLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
-      >
-        <SpeedInsights/>
-        {children}
-      </body>
-      <GoogleAnalytics gaId="G-7MM1MN02JX" />
-    </html>
-  );
+}: {
+  children: React.ReactNode
+}) {
+  return children
 }

@@ -6,7 +6,7 @@ import type { Metadata } from 'next'
  
 export const metadata: Metadata = {
   title: 'Society PC | Services',
-  description: '...',
+  description: 'Professional computer repair and tech services in Easton, PA.',
 }
 
 export default function ServicesPage() {
@@ -55,11 +55,14 @@ export default function ServicesPage() {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow bg-gray-50">
+      <Header changeColor={true} />
+      <main className="flex-grow bg-gradient-to-br from-purple-700 via-blue-500 to-blue-500">
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4">
-            <h1 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">Our Services</h1>
+            <h1 className="text-4xl md:text-5xl font-bold text-center mb-4 text-white">Our Services</h1>
+            <p className="text-xl text-white/90 text-center mb-12 max-w-2xl mx-auto">
+              Comprehensive tech solutions tailored to your needs.
+            </p>
             <div className="grid gap-8 md:grid-cols-2">
               {serviceCategories.map((category, index) => (
                 <ServiceCategory key={index} title={category.title} services={category.services} url={category.url} />

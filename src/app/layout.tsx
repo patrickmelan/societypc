@@ -30,9 +30,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <SpeedInsights/>
+        <GoogleAnalytics gaId="G-7MM1MN02JX" />
         {children}
       </body>
-      <GoogleAnalytics gaId="G-7MM1MN02JX" />
     </html>
   );
 }

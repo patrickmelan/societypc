@@ -5,11 +5,11 @@ import { Button } from './ui/button'
 
 export default function Services() {
   return (
-    <section id="services" className="py-16 bg-blue-500">
+    <section id="services" className="py-20 bg-gradient-to-b from-blue-500 to-blue-600">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12 text-gray-100">Our Services</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
-          <Card>
+        <h2 className="text-4xl font-bold text-center mb-16 text-white">Our Services</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <Card className="transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <CardHeader>
               <Cpu className="h-12 w-12 text-blue-500 mb-4 mx-auto" />
               <CardTitle className="text-center">Custom PC Solutions</CardTitle>
@@ -19,7 +19,7 @@ export default function Services() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <CardHeader>
               <HardDrive className="h-12 w-12 text-blue-500 mb-4 mx-auto" />
               <CardTitle className="text-center">Data Services</CardTitle>
@@ -29,7 +29,7 @@ export default function Services() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <CardHeader>
               <WrenchIcon className="h-12 w-12 text-blue-500 mb-4 mx-auto" />
               <CardTitle className="text-center">Computer Repair</CardTitle>
@@ -39,7 +39,7 @@ export default function Services() {
             </CardContent>
           </Card>
 
-          <Card>
+          <Card className="transform transition-all duration-300 hover:scale-105 hover:shadow-xl">
             <CardHeader>
               <Globe className="h-12 w-12 text-blue-500 mb-4 mx-auto" />
               <CardTitle className="text-center">Web Design</CardTitle>
@@ -50,7 +50,7 @@ export default function Services() {
           </Card>
         </div>
         <div className="text-center">
-          <Button asChild>
+          <Button asChild className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg">
             <Link href="/services">View All Services</Link>
           </Button>
         </div>
