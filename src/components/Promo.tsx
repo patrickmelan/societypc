@@ -36,6 +36,7 @@ export default function HomePage() {
                 return randomChance < showProbability
             } catch (error) {
                 // If localStorage is not available, show with reduced probability
+                console.error('Error checking promo visibility:', error)
                 return Math.random() < 0.2 // 20% chance as fallback
             }
         }
@@ -48,6 +49,7 @@ export default function HomePage() {
                 try {
                     localStorage.setItem('promoLastShown', new Date().toISOString())
                 } catch (error) {
+                    console.error('Error setting promo last shown:', error)
                     // Ignore localStorage errors
                 }
             }, 500)
